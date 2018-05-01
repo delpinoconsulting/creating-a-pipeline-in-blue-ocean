@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install -g'
+        sh 'npm install --prefix /var/lib/jenkins -g'
       }
     }
   }
